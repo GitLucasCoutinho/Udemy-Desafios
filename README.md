@@ -40,8 +40,8 @@ classDiagram
     }
         class Telefone {
         +Agenda.contatos
-        +ligar()
-        +desligar()
+        +ligarChamada()
+        +desligarChamada()
         +discagem()
         +Ferramentas.tecladoNumerico()
         +deixarEmEspera() 
