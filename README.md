@@ -3,7 +3,7 @@ DIO - Trilha Java Básico Desafio POO
 
 ```mermaid
 classDiagram
-    direction LR
+    direction Lucas
     class Iphone {
         +NavegadorWeb
         +GoogleMaps
@@ -20,14 +20,15 @@ classDiagram
         +configuracoes
         +ligar()
         +desligar()
+        
     }
-
-    class Ferramentas {
+    
+    class Ferramentas{
         +tecladoQwart()
         +tecladoNumerico()
         +controleDeMidias()
     }
-    class Agenda {
+      class Agenda{
         +String nome
         +String email
         +String telefoneMovel
@@ -35,8 +36,9 @@ classDiagram
         +String telefoneComercial
         +Data dataDeNascimento
         +contatos()
+
     }
-    class Telefone {
+        class Telefone {
         +Agenda.contatos
         +ligar()
         +desligar()
@@ -45,7 +47,83 @@ classDiagram
         +deixarEmEspera() 
         +criarSalaDeConference()
     }
+    
+
+    class Calendario{
+        +abrirCalendario()
+        +novoLembrete()
+        +apagarLembrete()
+        +Ferramentas.tecladoQwart()
+    }
+
+    class ClimaTempo{
+        +buscarCidade()
+        +favoritos()
+        +Ferramentas.tecladoQwart()
+    }
+    class SMS{
+        +Agenda.contatos()
+        +listarConversas()
+        +novaMensagem()
+        +enviarMensagem()
+        +Ferramentas.tecladoQwart()
+    }
+    class GoogleMaps {
+        +String geolocalizacao
+        +abrirGoogleMaps()
+        +Buscar()
+        +Ferramentas.tecladoQwart()
+    }
+
+    class NavegadorWeb {
+        +String barraDeEndereco
+        +List historico
+        +List downloads
+        +fecharAba()
+        +navegacaoPrivada()
+        +Ferramentas.tecladoQwart()
+    }
+    class Fotos{
+        +filtro()
+        +album
+    }
+
+
+    class ReprodutorMusical {
+        +List<String> favoritos 
+        +List<String> playList
+        +buscar()
+        +play()
+        +stop()
+        +proxima()
+        +anterior()
+        +Ferramentas.controleDeMidias()
+    }
+
+    class Email {
+        +List<String> caixaDeEntrada
+        +List<String> rascunhos
+        +List<String> enviados
+        +List<String> spam
+        +List<String> lixoEletronico
+        +buscar()
+        +novoEmail()
+        +enviar()
+    }
+    class Configuracoes {
+        +ajustarBrlho
+    }
+
 
     Iphone --|> Ferramentas 
     Iphone --|> Agenda
     Iphone --|> Telefone
+    Iphone --|> SMS
+    Iphone --|> Fotos
+    Iphone --|> Calendario
+    Iphone --|> ClimaTempo
+    Iphone --|> GoogleMaps
+    Iphone --|> NavegadorWeb
+    Iphone --|> ReprodutorMusical
+    Iphone --|> Email
+    Iphone --|> Configuracoes
