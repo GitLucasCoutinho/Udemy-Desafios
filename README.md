@@ -1,17 +1,30 @@
-```mermaid
-graph TD
-    A[Usuário] --> B[Service Layer<br>com.project.tdd.comercio.service]
-    B --> C[Model Layer<br>com.project.tdd.comercio.model]
-    B --> D[Repository Layer<br>com.project.tdd.comercio.repository]
-    D --> E[Base de Dados (simulada ou real)]
+# 🚀 Desafios do Curso Java COMPLETO: Do Zero ao Profissional
 
-    subgraph Testes
-        T1[Testes Unitários]
-        T2[100% Cobertura<br>JaCoCo]
-    end
+Este repositório reúne todos os desafios práticos desenvolvidos ao longo do curso [Java COMPLETO: Do Zero ao Profissional + Projetos!](https://www.udemy.com/course/fundamentos-de-programacao-com-java/learn/lecture/15845596#overview) da Udemy. Cada desafio tem como objetivo consolidar os conceitos aprendidos e aplicar boas práticas de programação.
 
-    T1 --> B
-    T1 --> C
-    T1 --> D
-    T2 --> T1
-```
+---
+
+## 📂 Índice de Desafios
+
+| Nº | Projeto | Resumo |
+|----|---------|--------|
+| 01 | 🛍️ **Desafio Vendas** | Sistema simples de comércio com cadastro de clientes e produtos, registro de compras e cálculo do total faturado. Toda lógica em memória com testes automatizados.|
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Java 17+
+- JUnit 5 para testes
+- Maven
+- IDE: IntelliJ IDEA / Eclipse
+
+---
+
+## 💡 Observações
+
+- Os desafios são organizados em pastas separadas para facilitar a navegação.
+- Cada pasta contém seu próprio README com instruções específicas.
+- Sinta-se à vontade para clonar o repositório e testar os projetos!
+
+---
