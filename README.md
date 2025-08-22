@@ -1,6 +1,6 @@
-# 🚀 Desafios do Curso Java COMPLETO: Do Zero ao Profissional
+# 🚀 Desafios do Curso [Java COMPLETO](https://www.udemy.com/course/fundamentos-de-programacao-com-java/learn/lecture/5740792#overview)
 
-Este repositório reúne todos os desafios práticos desenvolvidos ao longo do curso [Java COMPLETO: Do Zero ao Profissional + Projetos!](https://www.udemy.com/course/fundamentos-de-programacao-com-java/learn/lecture/15845596#overview) da Udemy. Cada desafio tem como objetivo consolidar os conceitos aprendidos e aplicar boas práticas de programação.
+Este repositório reúne todos os desafios práticos desenvolvidos ao longo do curso. Cada desafio tem como objetivo consolidar os conceitos aprendidos e aplicar boas práticas de programação.
 
 ---
 
