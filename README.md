@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[Usuário] --> B[Service Layer<br>com.project.tdd.comercio.service]
     B --> C[Model Layer<br>com.project.tdd.comercio.model]
@@ -13,3 +14,4 @@ graph TD
     T1 --> C
     T1 --> D
     T2 --> T1
+```
